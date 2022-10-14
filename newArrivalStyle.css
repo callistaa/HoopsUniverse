@@ -1,0 +1,277 @@
+*{
+    margin: 0; 
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+}
+
+.logo{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+#logoweb{
+    padding-top: 25px;
+    height: 15%;
+    width: 15%;
+    align-items: center;
+}
+
+#header > ul{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    align-items: center; 
+    height: 63px;
+}
+
+ul{
+    list-style: none;
+}
+
+#header > ul{ 
+    display: flex; 
+}
+
+.menu:hover{ 
+    color: #0d0d0d;
+    display: block;
+    border-bottom: 4px solid #ec5017;
+    transition: 0.3s;
+}
+
+#header ul li:hover .submenu{ 
+    display: block;
+}
+
+.submenu{
+    display: none;
+    position: absolute; 
+    border-bottom: none;
+    z-index:10;
+}
+
+.submenu a:hover{
+    background-color: #ec5017; 
+    color: white;
+    transition: 0.3s;
+}
+
+.submenu li a{
+    background-color: white; 
+    font-size: 16.6px;
+}
+
+#kneeSupportsSubMenu{
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #0d0d0d; 
+    padding: 16px;
+    font-size: 18px;
+    font-weight: 700;
+    display: block; 
+}
+
+#acc{
+    text-decoration: none;
+    color: #0d0d0d; 
+    padding: 16px;
+    font-size: 18px;
+    font-weight: 700;
+    display: block; 
+}
+
+#acc:hover{ 
+    color: #0d0d0d;
+    display: block;
+    border-bottom: 4px solid #ec5017;
+    transition: 0.3s;
+}
+
+.submenu a{
+    text-decoration: none;
+    color: #0d0d0d; 
+    padding: 16px;
+    font-size: 18px;
+    font-weight: 700;
+    display: block; 
+}
+
+#main{
+    min-height: 10vh;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#main a{
+    text-decoration: none;
+    color: black; 
+    padding: 16px;
+    font-size: 18px;
+    font-weight: 550;
+    display: block; 
+  
+}
+
+.balls{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    
+}
+
+.ball{
+    border: 5px solid black;
+    margin: 20px 16px;
+    border-radius: 5px;
+    color: black;
+}
+
+.image {
+    text-align: center;
+}
+
+#main img{
+    width: 300px;
+}
+
+#footer{
+    margin-top: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 15px;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+}
+
+/* Responsive */
+/* Ukuran Layar (dibawah 800px) */
+@media only screen and (max-width: 800px){
+    #main {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    #main img {
+        width: 250px;
+    }
+
+    .ball h3 {
+        font-size: 15px;
+    }
+    
+    .ball p {
+        font-size: 15px;
+    }
+}
+
+/* Responsive */
+/* Ukuran Layar (dibawah 500px) */
+@media only screen and (max-width: 500px){
+    #header a {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    #main img {
+        width: 140px;
+    }
+
+    .ball {
+        margin: 12px 8px;
+        width: 140px;
+        height: 180px;
+    }
+
+    .ball h3 {
+        font-size: 12px;
+    }
+    
+    .ball p {
+        font-size: 12px;
+    }
+
+    #footer {
+        font-size: 12px;
+    }
+ }
+
+/* Responsive */
+/* Ukuran Layar (dibawah 380px) */
+ @media only screen and (max-width: 380px){
+    #header a {
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    #main img {
+        width: 120px;
+    }
+    #main a {
+        padding: 10px;
+    }
+
+    .ball {
+        margin: 12px 8px;
+        width: 120px;
+        height: 150px;
+    }
+
+    .ball h3 {
+        font-size: 10px;
+    }
+    
+    .ball p {
+        font-size: 10px;
+    }
+
+    #footer {
+        font-size: 10px;
+    }
+ }
+
+ /* Responsive */
+/* Ukuran Layar (dibawah 325px) */
+@media only screen and (max-width: 325px){
+    #header a {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    #main img {
+        width: 120px;
+    }
+
+    #main a {
+        padding: 0;
+    }
+
+    .ball {
+        margin: 12px 8px;
+        width: 120px;
+        height: 160px;
+    }
+
+    .ball h3 {
+        font-size: 10px;
+    }
+    
+    .ball p {
+        font-size: 10px;
+    }
+
+    #footer {
+        font-size: 10px;
+    }
+ }

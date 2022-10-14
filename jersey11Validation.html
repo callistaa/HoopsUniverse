@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./validationMaster.css">
+    <script src="./validation.js" defer></script>
+    <title>Hoops Universe - Basketball Store</title>
+</head>
+
+<body>
+    <div class="logo">
+        <!-- Logo -->
+        <img id="logoweb" src="./assets/logo/logo.jpg" alt="">
+    </div>
+
+    <div id="header">
+       <!-- Navigation Bar -->
+       <ul>
+           <li class="menu">
+               <a href="./home.html">HOME</a>
+           </li>
+           <li class="menu">
+               <a href="./shoes.html">SHOES</a>
+           </li>
+           <li class="menu">
+               <a id="acc" href="./accessoriesClick.html">ACCESSORIES</a>
+               <ul class="submenu">
+                   <li>
+                       <a href="./basketball.html">Basketball</a>
+                   </li>
+                   <li>
+                       <a href="./jersey.html">Jersey</a>
+                   </li>
+                   <li>
+                       <a href="./jacket.html">Jacket</a>
+                   </li>
+                   <li>
+                       <a id="kneeSupportsSubMenu" href="./kneeSupports.html">Knee Supports</a>
+                   </li>
+               </ul>
+           </li>
+           <li class="menu">
+               <a href="./FAQ.html">FAQ</a>
+           </li>
+           <li class="menu">
+               <a href="./cart.html">CART</a>
+           </li>
+       </ul>
+    </div>
+
+    <hr>
+
+    <div id="main">
+        <div class="product">
+            <img src="./assets/jersey/kyrieirving.webp" alt="">
+        </div>
+        <fieldset>
+            <form action="" name="validationForm">
+                <table>
+                    <tr>
+                        <td colspan="2">
+                            <h1>Kyrie irving Jersey</h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <h2>Price : Rp. 1.700.000</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <h3>Size : XXL</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <h3>*Product Details*</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <hr>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="nama">Name</label></td>
+                        <td>
+                            <input type="text" name="nama" id="nama" placeholder="John Doe">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="phone">Phone Number</label></td>
+                        <td>
+                            <input type="text" name="phone" id="phone" placeholder="08XXXXXXX">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email</label></td>
+                        <td>
+                            <input type="email" name="email" id="email" placeholder="johndoe@gmail.com">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Gender</label></td>
+                        <td>
+                            <input type="radio" id="laki-laki" name="jeniskelamin" value="laki-laki">
+                            <label for="laki-laki">Man</label>
+                            <input type="radio" id="perempuan" name="jeniskelamin" value="perempuan">
+                            <label for="perempuan">Woman</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="age">Age</label></td>
+                        <td>
+                            <input type="number" name="age" id="age" placeholder="XX">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="district">District</label></td>
+                        <td>
+                            <input type="text" name="district" id="district">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="address">Address</label></td>
+                        <td>
+                            <textarea name="address" id="address" cols="30" rows="3"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="postal">Postal Code</label></td>
+                        <td>
+                            <input type="text" name="postal" id="postal">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="note">Additional Notes</label></td>
+                        <td>
+                            <input type="text" name="note" id="note" placeholder="optional">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <label id="errorLabel"></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="./jersey.html" class="button"><input type="button" id="button" value="Back to Product"></a>
+                        </td>
+                        <td>
+                            <input type="submit" id="submitBtn" name="submit">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </fieldset>
+    </div>
+
+    <div id="footer">
+        <span>Copyright &copy; 2010-2021  |  HOOPS UNIVERSE</span>
+    </div>
+</body>
+
+</html>

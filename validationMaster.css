@@ -1,0 +1,342 @@
+*{
+    margin: 0; 
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+}
+
+.logo{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+#logoweb{
+    padding-top: 25px;
+    height: 15%;
+    width: 15%;
+    align-items: center;
+}
+
+#header > ul{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    align-items: center; 
+    height: 63px;
+}
+
+ul{
+    list-style: none;
+}
+
+#header > ul{ 
+    display: flex; 
+}
+
+.menu:hover{ 
+    color: #0d0d0d;
+    display: block;
+    border-bottom: 4px solid #ec5017;
+    transition: 0.3s;
+}
+
+#header ul li:hover .submenu{ 
+    display: block;
+}
+
+.submenu{
+    display: none;
+    position: absolute; 
+    border-bottom: none;
+    z-index:10;
+}
+
+.submenu a:hover{
+    background-color: #ec5017; 
+    color: white;
+    transition: 0.3s;
+}
+
+.submenu li a{
+    background-color: white; 
+    font-size: 16.6px;
+}
+
+#kneeSupportsSubMenu{
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #0d0d0d; 
+    padding: 16px;
+    font-size: 18px;
+    font-weight: 700;
+    display: block; 
+}
+
+#acc{
+    text-decoration: none;
+    color: #0d0d0d; 
+    padding: 16px;
+    font-size: 18px;
+    font-weight: 700;
+    display: block; 
+}
+
+#acc:hover{ 
+    color: #0d0d0d;
+    display: block;
+    border-bottom: 4px solid #ec5017;
+    transition: 0.3s;
+}
+
+.submenu a{
+    text-decoration: none;
+    color: #0d0d0d; 
+    padding: 16px;
+    font-size: 18px;
+    font-weight: 700;
+    display: block; 
+}
+
+#main {
+    display: flex;
+    justify-content: space-evenly;
+    border: 5px solid black;
+    border-radius: 5px;
+    margin-top: 40px;
+    margin-left: 170px;
+    margin-right: 170px;
+    align-items: center;
+}
+
+td{
+    padding-top: 10px;
+}
+
+input{
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding-left: 8px;
+}
+
+#button, #submitBtn {
+    padding-left: 7px;
+    padding-right: 7px;
+    margin: 5px;
+}
+
+label {
+    font-size: 20px;
+}
+
+.product img {
+    width: 500px;
+    text-align: center;
+}
+
+fieldset {
+    border: none;
+}
+
+#errorLabel {
+    font-size: 15px;
+    color: red;
+}
+
+textarea {
+    border: 2px solid black;
+    border-radius: 4px;
+    resize: none;
+    width: 240px;
+}
+
+#footer{
+    margin-top: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 15px;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+}
+
+/* Responsive */
+/* Ukuran Layar (dibawah 1080px) */
+@media only screen and (max-width: 1080px){
+   #main {
+       display: flex;
+       flex-direction: column;
+   }
+
+   .product img {
+       width: 400px;
+   }
+}
+
+/* Responsive */
+/* Ukuran Layar (dibawah 500px) */
+@media only screen and (max-width: 500px){
+    #header a {
+        font-size: 15px;
+        padding: 10px;
+    }
+    
+    .product img {
+        width: 300px;
+    }
+
+    #errorLabel {
+        font-size: 10px;
+    }
+
+    #main {
+        border: 5px solid black;
+        border-radius: 5px;
+        margin-top: 30px;
+        margin-left: 40px;
+        margin-right: 40px;
+        align-items: center;
+    }
+    
+    td{
+        padding-top: 4px;
+    }
+    
+    input{
+        font-size: 15px;
+    }
+    
+    label {
+        font-size: 15px;
+    }
+
+    #footer {
+        font-size: 10px;
+    }
+
+    textarea {
+        width: 180px;
+    }
+ }
+
+ @media only screen and (max-width: 380px){
+    #header a {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    #main h1 {
+        font-size: 30px;
+    }
+
+    #main h2 {
+        font-size: 25px;
+    }
+
+    #main h3 {
+        font-size: 20px;
+    }
+
+    .product img {
+        width: 250px;
+    }
+
+    #errorLabel {
+        font-size: 5px;
+    }
+
+    #main {
+        border: 5px solid black;
+        border-radius: 5px;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        align-items: center;
+    }
+    
+    td{
+        padding-top: 2px;
+    }
+    
+    input{
+        font-size: 15px;
+    }
+    
+    label {
+        font-size: 15px;
+    }
+
+    textarea {
+        width: 180px;
+    }
+
+    #errorLabel {
+        font-size: 10px;
+    }
+ }
+
+ /* Responsive */
+/* Ukuran Layar (dibawah 500px) */
+@media only screen and (max-width: 320px){
+    #header a {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    #main h1 {
+        font-size: 25px;
+    }
+
+    #main h2 {
+        font-size: 20px;
+    }
+
+    #main h3 {
+        font-size: 15px;
+    }
+
+    .product img {
+        width: 200px;
+    }
+
+    #errorLabel {
+        font-size: 5px;
+    }
+
+    #main {
+        border: 5px solid black;
+        border-radius: 5px;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        align-items: center;
+    }
+    
+    td{
+        padding-top: 2px;
+    }
+    
+    input{
+        font-size: 10px;
+    }
+    
+    label {
+        font-size: 10px;
+    }
+
+    textarea {
+        width: 130px;
+    }
+
+    #errorLabel {
+        font-size: 5px;
+    }
+ }
