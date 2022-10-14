@@ -1,0 +1,250 @@
+*{
+    margin: 0; 
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+}
+
+.logo{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+#logoweb{
+    padding-top: 25px;
+    height: 15%;
+    width: 15%;
+    align-items: center;
+}
+
+#header > ul{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    align-items: center; 
+    height: 63px;
+}
+
+ul{
+    list-style: none;
+}
+
+#header > ul{ 
+    display: flex; 
+}
+
+.menu:hover{ 
+    color: #0d0d0d;
+    display: block;
+    border-bottom: 4px solid #ec5017;
+    transition: 0.3s;
+}
+
+#header ul li:hover .submenu{ 
+    display: block;
+}
+
+.submenu{
+    display: none;
+    position: absolute; 
+    border-bottom: none;
+    z-index:10;
+}
+
+.submenu a:hover{
+    background-color: #ec5017; 
+    color: white;
+    transition: 0.3s;
+}
+
+.submenu li a{
+    background-color: white; 
+    font-size: 16.6px;
+}
+
+#kneeSupportsSubMenu{
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #0d0d0d; 
+    padding: 16px;
+    font-size: 18px;
+    font-weight: 700;
+    display: block; 
+}
+
+#acc{
+    text-decoration: none;
+    color: #0d0d0d; 
+    padding: 16px;
+    font-size: 18px;
+    font-weight: 700;
+    display: block; 
+}
+
+#acc:hover{ 
+    color: #0d0d0d;
+    display: block;
+    border-bottom: 4px solid #ec5017;
+    transition: 0.3s;
+}
+
+.submenu a{
+    text-decoration: none;
+    color: #0d0d0d; 
+    padding: 16px;
+    font-size: 18px;
+    font-weight: 700;
+    display: block; 
+}
+
+h1{
+    color: #ec5017;
+    margin-top: 40px;
+    margin-bottom: 45px;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.accordion {
+    width: 90%;
+    max-width: 1000px;
+    margin: 2rem auto;
+}
+
+.accordion_item{
+    background-color: #e0e0e0;
+    margin: 1rem 0;
+    border-radius: 0.4rem;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+}
+
+.question{
+    color: #ec5017;
+    padding: 0.5rem 3rem 0.5rem 1rem;
+    min-height: 3.5rem;
+    line-height: 1.25rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.question::after {
+    content: '\25B6'; 
+    font-size: 1.5rem;
+    position: absolute;
+    right: 1rem;
+}
+
+.question.active::after{
+    content: '\25B2';
+}
+
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background-color: rgb(255, 255, 255);
+}
+
+.answer p{
+    padding: 1rem;
+    line-height: 1.5rem;
+    border-top: 2px solid;
+    border-color: chocolate;
+}
+
+#footer{
+    margin-top: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 15px;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+}
+
+/* Responsive */
+/* Ukuran Layar (dibawah 500px) */
+@media only screen and (max-width: 500px){
+   #header a {
+       font-size: 15px;
+       padding: 10px;
+   }
+
+   h1 {
+       font-size: 25px;
+   }
+
+   .question {
+       font-size: 1rem;
+   }
+
+   .answer p {
+       font-size: 14px;
+   }
+
+   #footer {
+       font-size: 12px;
+   }
+}
+
+/* Responsive */
+/* Ukuran Layar (dibawah 380px) */
+@media only screen and (max-width: 380px){
+    #header a {
+        font-size: 15px;
+        padding: 5px;
+    }
+ 
+    h1 {
+        font-size: 20px;
+    }
+ 
+    .question {
+        font-size: 1rem;
+    }
+ 
+    .answer p {
+        font-size: 10px;
+    }
+ 
+    #footer {
+        font-size: 10px;
+    }
+ }
+
+ /* Responsive */
+/* Ukuran Layar (dibawah 325px) */
+@media only screen and (max-width: 325px){
+    #header a {
+        font-size: 12px;
+        padding: 5px;
+    }
+ 
+    h1 {
+        font-size: 20px;
+    }
+ 
+    .question {
+        font-size: 1rem;
+    }
+ 
+    .answer p {
+        font-size: 10px;
+    }
+ 
+    #footer {
+        font-size: 10px;
+    }
+ }
